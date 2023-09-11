@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- use triple mustache for non-HTML-escaped interpolation -->
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Open+Sans:300,400" rel="stylesheet">
+        
+        <title>{{ title }}</title>
+        
+        <link rel="icon" href="favicon.png" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    </head>
+    <body>
+        <div>
+            <!--vue-ssr-outlet-->
+        </div>
+        {{{ renderState() }}}
+        {{{ renderScripts() }}}
+    </body>
+</html>

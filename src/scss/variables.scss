@@ -1,0 +1,30 @@
+
+$grey-lightest: #E3F1FC;
+$grey-lighter: #9CB3C1;
+$grey-light: #889FAD;
+$grey: #6E808C;
+$grey-dark: #3D4B54;
+$grey-darker: #2F393F;
+$grey-darkest: #21282D;
+
+$primary: #25C47F;
+$primary-dark: darken($primary, 10%);
+$primary-light: lighten($primary, 10%);
+
+$secondary: #8154ff;
+$secondary-dark: darken(#8154ff, 10%);
+$secondary-light: lighten(#8154ff, 10%);
+
+$bg: #EDF7FF;
+
+$font-lg: 20px;
+$font-md: 16px;
+$font-sm: 14px;
+
+$base-font-size: $font-md;
+$base-font-color: $grey-darkest;
+$base-font-family: 'Assistant', sans-serif;
+
+$header-font-family: 'Open Sans', serif;
+
+$gap: 24px;

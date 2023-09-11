@@ -1,0 +1,75 @@
+Arguments: 
+  /home/kentleigh/.nvm/versions/node/v16.16.0/bin/node /home/kentleigh/.nvm/versions/node/v16.16.0/bin/yarn init
+
+PATH: 
+  /home/linuxbrew/.linuxbrew/bin:/home/kentleigh/.nvm/versions/node/v16.16.0/bin:/home/kentleigh/.local/bin:/home/kentleigh/bin:/home/linuxbrew/.linuxbrew/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/var/lib/snapd/snap/bin:/home/kentleigh/.local/bin:/home/kentleigh/bin:/home/kentleigh/go/bin:/home/kentleigh/.config/composer/vendor/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/home/kentleigh/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:137150:13)
+      at Interface.emit (node:events:527:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:527:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  {
+    "name": "partypicker",
+    "version": "1.0.0",
+    "description": "An application for finding your ideal political party.",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "export NODE_ENV='development'; parallelshell 'nodemon index.js' 'npm run watch:server' 'npm run watch:client'",
+      "watch:server": "webpack --config webpack.server.config.js -w",
+      "watch:client": "webpack --config webpack.client.config.js -w",
+      "build:server": "webpack --config webpack.server.config.js",
+      "build:client": "webpack --config webpack.client.config.js"
+    },
+    "author": "Kentleigh English",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.18.0",
+      "express": "^4.16.3",
+      "nodemon": "^1.18.3",
+      "vue": "^2.5.17",
+      "vue-router": "^3.0.1",
+      "vue-server-renderer": "^2.5.17",
+      "vuex": "^3.0.1",
+      "vuex-router-sync": "^5.0.0",
+      "webpack": "^4.16.5",
+      "webpack-cli": "^3.1.0"
+    },
+    "devDependencies": {
+      "css-loader": "^1.0.0",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "node-sass": "^4.9.3",
+      "parallelshell": "^3.0.2",
+      "sass-loader": "^7.1.0",
+      "vue-loader": "^15.3.0",
+      "vue-style-loader": "^4.1.1",
+      "vue-template-compiler": "^2.5.17",
+      "webpack-merge": "^4.1.4",
+      "webpack-node-externals": "^1.7.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
